@@ -1482,7 +1482,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LM1117MP-3.3"
+		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1494,7 +1494,7 @@
 					)
 				)
 			)
-			(property "Value" "LM1117MP-3.3"
+			(property "Value" "NCP1117-3.3_SOT223"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -1504,6 +1504,24 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1512,7 +1530,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
+			(property "ki_keywords" "REGULATOR LDO 3.3V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1521,7 +1539,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1530,25 +1548,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM1117MP-3.3_0_1"
+			(symbol "NCP1117-3.3_SOT223_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end 5.08 1.905)
@@ -1561,7 +1561,7 @@
 					)
 				)
 			)
-			(symbol "LM1117MP-3.3_1_1"
+			(symbol "NCP1117-3.3_SOT223_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -2202,7 +2202,7 @@
 		)
 		(uuid "1c63e3d3-329c-43d7-92af-86f68216ee62")
 	)
-	(text "Compadable with 100V and 200V AC systems.\nInput AC input resistors should be rated above 100V 1W each.\nComponents after the AC input resistors should rated above 30V.\n\nStartup time is around 250ms as C4 should reach equilibrium,"
+	(text "Compadable with 100V systems.\nInput AC input resistors should be rated above 100V 1W each.\nComponents after the AC input resistors should rated above 30V.\n\nStartup time is around 250ms as C4 should reach equilibrium,"
 		(exclude_from_sim no)
 		(at 18.796 185.928 0)
 		(effects
@@ -2525,7 +2525,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 142.24) (xy 152.4 144.78)
+			(xy 152.4 140.97) (xy 152.4 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2795,7 +2795,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 129.54) (xy 152.4 134.62)
+			(xy 152.4 129.54) (xy 152.4 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3181,7 +3181,7 @@
 				)
 			)
 		)
-		(property "Value" "220K 1W"
+		(property "Value" "100K 1W"
 			(at 97.79 128.27 90)
 			(effects
 				(font
@@ -3189,7 +3189,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 97.79 133.858 90)
 			(effects
 				(font
@@ -3460,7 +3460,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:LTST-C190GKT"
 			(at 171.45 60.96 0)
 			(effects
 				(font
@@ -3530,7 +3530,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "180"
 			(at 182.88 68.5799 0)
 			(effects
 				(font
@@ -3539,7 +3539,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 182.118 67.31 90)
 			(effects
 				(font
@@ -3654,7 +3654,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BAS19")
-		(at 152.4 138.43 90)
+		(at 152.4 137.16 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3663,7 +3663,7 @@
 		(fields_autoplaced yes)
 		(uuid "56cab292-d2f7-49c8-8db9-42803290b1cd")
 		(property "Reference" "D6"
-			(at 154.94 137.1599 90)
+			(at 154.94 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3672,7 +3672,7 @@
 			)
 		)
 		(property "Value" "BAS19"
-			(at 154.94 139.6999 90)
+			(at 154.94 138.4299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3681,7 +3681,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 156.845 138.43 0)
+			(at 156.845 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3690,7 +3690,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/Ds12004.pdf"
-			(at 152.4 138.43 0)
+			(at 152.4 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,7 +3699,7 @@
 			)
 		)
 		(property "Description" "120V, 0.4A, High-speed Switching Diode, SOT-23"
-			(at 152.4 138.43 0)
+			(at 152.4 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3817,7 +3817,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 163.83 108.458 90)
 			(effects
 				(font
@@ -3997,77 +3997,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LM1117MP-3.3")
-		(at 132.08 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "65dcf3a3-eabb-4dba-a4f4-497ec42691a4")
-		(property "Reference" "U1"
-			(at 132.08 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM1117MP-3.3"
-			(at 132.08 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 132.08 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
-			(at 132.08 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "800mA Low-Dropout Linear Regulator, 3.3V fixed output, SOT-223"
-			(at 132.08 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1fef8603-dc67-45f0-8c62-74fa6b48296d")
-		)
-		(pin "1"
-			(uuid "789236ab-fd70-46e2-baf0-15c32bf86298")
-		)
-		(pin "2"
-			(uuid "725518b8-89bc-4dd8-ba71-daf16fa05a23")
-		)
-		(instances
-			(project "zero_cross_detector"
-				(path "/fbf98b25-574d-4bc1-8e62-e62288d98bb0"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 132.08 76.2 0)
 		(unit 1)
@@ -4200,33 +4129,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 96.52 68.58 180)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 96.52 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7142924b-da72-4a0b-93f0-ded86e3e61de")
-		(property "Reference" "J2"
-			(at 96.52 59.69 0)
+		(uuid "76190604-7784-4075-9fc2-21f49e89fc4b")
+		(property "Reference" "J5"
+			(at 97.155 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "DC_Input"
-			(at 96.52 62.23 0)
+		(property "Value" "Vin"
+			(at 97.155 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 96.52 68.58 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 96.52 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4235,7 +4164,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 68.58 0)
+			(at 96.52 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4243,8 +4172,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 96.52 68.58 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 96.52 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4253,15 +4182,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ee941f38-0752-4d1b-8411-47671d74b644")
+			(uuid "4836c18a-43d9-4d30-a75c-17fc950206ab")
 		)
 		(pin "2"
-			(uuid "fe9b41eb-b640-4e12-94df-c78b989e339e")
+			(uuid "7cba2c78-538b-4a4d-8d1d-35d523433985")
 		)
 		(instances
 			(project "zero_cross_detector"
 				(path "/fbf98b25-574d-4bc1-8e62-e62288d98bb0"
-					(reference "J2")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4443,7 +4372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 196.342 110.49 90)
 			(effects
 				(font
@@ -4513,7 +4442,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x4.9"
 			(at 115.2652 71.12 0)
 			(effects
 				(font
@@ -4581,7 +4510,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
 			(at 81.28 127 0)
 			(effects
 				(font
@@ -4651,7 +4580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x4.9"
 			(at 145.7452 71.12 0)
 			(effects
 				(font
@@ -4721,7 +4650,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 209.55 120.65 0)
 			(effects
 				(font
@@ -4791,7 +4720,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 108.9152 129.54 0)
 			(effects
 				(font
@@ -4851,7 +4780,7 @@
 				)
 			)
 		)
-		(property "Value" "220K 1W"
+		(property "Value" "100K 1W"
 			(at 97.79 115.57 90)
 			(effects
 				(font
@@ -4859,7 +4788,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 97.79 121.158 90)
 			(effects
 				(font
@@ -4920,7 +4849,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22K"
+		(property "Value" "47K"
 			(at 144.78 126.9999 0)
 			(effects
 				(font
@@ -4929,7 +4858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 140.462 125.73 90)
 			(effects
 				(font
@@ -4990,7 +4919,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10u"
 			(at 156.21 118.4909 0)
 			(effects
 				(font
@@ -4999,7 +4928,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x4.9"
 			(at 153.3652 121.92 0)
 			(effects
 				(font
@@ -5125,6 +5054,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
+		(at 132.08 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df9f7bfd-3cb0-4813-834c-0306f38cf1e8")
+		(property "Reference" "U3"
+			(at 132.08 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCP1117-3.3_SOT223"
+			(at 132.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 132.08 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
+			(at 134.62 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2162d142-c240-4427-8712-a818efdd47e6")
+		)
+		(pin "1"
+			(uuid "c37842f4-8432-470d-9593-c19a5f75db08")
+		)
+		(pin "2"
+			(uuid "4f661e8a-c015-47b6-9287-f08410714022")
+		)
+		(instances
+			(project ""
+				(path "/fbf98b25-574d-4bc1-8e62-e62288d98bb0"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 165.1 68.58 180)
 		(unit 1)
@@ -5152,7 +5152,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 165.1 68.58 0)
 			(effects
 				(font
